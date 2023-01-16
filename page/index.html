@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Room Info</title>
+</head>
+<body>
+    <div class="roomInfo">
+        <div class="roomOverviewContainer">
+        <div class="roomOverviewTop">
+            <h1 class="roomId">A101</h1>
+            <p class="upcoming">Upcoming</p>
+            <div class="days"> 
+            <p class="day">Monday</p>
+            <p class="dateAndMonth">28 Sep</p>
+         </div>
+         <div class="schedulView">
+            <p class="timeScheduleView">13:00 - 14:00</p>
+            <span class="scheduleListView">Lunch with Peter</span>
+            <p class="timeScheduleView">15:00 - 16:00</p>
+            <span class="scheduleListView">Sales Weekly Meeting</span>
+            <p class="timeScheduleView">16:00 - 18:00</p>
+            <span class="scheduleListView">Anastasia Website Warroom</span>
+        </div>
+        </div>
+        <div class="roomOverviewBottom">
+        </div>
+   
+    </div>
+    <div class="roomData">
+        <div class="vl"></div>
+        <div class="tab">
+        <p id="THISWEEK">THIS WEEK</p>
+        <p id="NEXTWEEK">NEXT WEEK</p>
+        <p id="WHOLEMONTH">WHOLE MONTH</p>
+        <div class="line"></div>
+    </div>
+   <div class="roomSchedule">
+    <div class="dateHeader"><p class="today">Today (Mon, 28 Sep)</p> </div>
+        <ul class="timelineList">
+            <li><div class="timeline">13:00 - 14:00</div>
+            <p class="description" >Lunch with Petr</p></li>
+            <li><div class="timeline" id="timeline2">14:00 - 15:00</div>
+            <p class="description" >Sales Weekly Meeting</p></li>
+            <li >&nbsp;</li>
+            <li><div class="timeline" id="timeline3">16:00 - 18:00</div>
+            <p class="description">Anastasia Website Warroom</p></li>
+        </ul>
+   
+    <div class="dateHeader"><p class="tomorrow">Tomorrow (Tue, 29 Sep)</p>
+        <ul class="timelineList">
+            <li><div class="timeline" id="timeline4">13:00 - 14:00</div>
+            <p class="description">One-on-one Session</p></li>
+            <li><div class="timeline" id="timeline5">16:00 - 18:00</div>
+            <p class="description">UGC Sprint Planning</p></li>
+        </ul>
+    </div>
+   </div>
+    </div>
+</div>
+</body>
+</html>

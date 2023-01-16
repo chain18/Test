@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+}
+
+body{
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    background:linear-gradient(236.58deg, #BCBFC8 10.31%, #91A2C6 90.59%), #B9BDC8;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.roomInfo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-top: 123px;
+    margin-bottom: 126px;
+   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.14)
+}
+
+.roomOverviewContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.roomId{
+    font-family: 'Roboto', sans-serif;
+    background:#2EBAEE;
+    max-width: 495px;
+    max-height: 135px;
+    font-size: 54px;
+    color: white;
+    text-indent: 48px;
+    margin-left: 90px;
+    padding-top: 56px;
+    padding-bottom: 14px;
+    box-shadow: 0px 4px 32px rgba(57, 64, 111, 0.25);
+}
+.roomOverviewTop{
+    display: flex;
+    flex-direction: column;
+    background: #46529D;
+    height: 629px;
+    width: 585px;
+}
+.upcoming{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 97px;
+    padding-top: 125px;
+    padding-bottom: 58px;
+}
+.days{
+    font-size: 64px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin-left: 90px;
+}
+.day{
+    opacity: 50%;
+}
+.dateAndMonth{
+   padding-bottom: 90px;
+}
+.schedulView{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    color: white;
+    font-weight: 400;
+    margin-left: 90px;
+    margin-top: 569px;
+}
+.timeScheduleView{ 
+    font-size: 16px;
+    opacity: 50%;
+   
+}
+
+.scheduleListView{
+    font-size: 20px;
+     padding-bottom: 38px;
+
+}
+.roomOverviewBottom{
+    background:#4D59A1;
+    height: 375px;
+    width: 585px;
+}
+/* End style Room Overview Container */
+
+.roomData{
+ width: 100%;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+}
+.tab{
+   display: flex;
+    background: #EFEEEC; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    height: 29px;
+    padding-top: 83px;
+    padding-bottom: 23px;
+    z-index: 1;
+}
+#THISWEEK{
+    margin-left: 64px;
+    margin-right: 75px;
+}
+#NEXTWEEK{
+    opacity: 50%;
+    margin-right: 75px;
+}
+#WHOLEMONTH{
+    opacity: 50%;
+}
+.line{
+    display: flex;
+    position:absolute;
+    background: #707FDD;
+    width: 51px;
+    height: 4px;
+    box-shadow: 0px -1px 16px rgba(112, 127, 221, 0.75);
+    margin-top: 48px;
+    margin-left: 100px;
+}
+.roomSchedule{
+    display: flex;
+    flex-direction: column;
+    background:#FFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.14);
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.dateHeader{
+    z-index: 1;
+}
+.today{
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    height: 47px;
+    font-weight: 700;
+    color: #787878;
+    font-size: 18px;
+    padding-left: 94px;
+    margin-top: 78px;
+    border: 1px solid #ECECEC;
+}
+.tomorrow{
+    display: flex;
+    align-items: center;
+    height: 47px;
+    background: #F7F7F7;
+    color: #787878;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 94px;
+    margin-top: 12px;
+    border: 1px solid #ECECEC;
+}
+.timeline{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 50%;
+  }
+
+  .timeline::before{
+    content: "";
+  background: #3DC7D2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  }
+  #timeline2::before{
+    content: "";
+  background: #23CF5F;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  }
+  #timeline3::before{
+    content: "";
+  background: #F3814A;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  }
+  #timeline4::before{
+    content: "";
+  background: #3DC7D2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  }
+  #timeline5::before{
+    content: "";
+  background: #23CF5F;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  }
+ul.timelineList{
+    padding-left: 54px;
+    margin-top: 50px;
+    padding-left: 94px;
+  
+  }
+  ul.timelineList li {
+    position: relative;
+    margin-bottom: 38px;
+    list-style: none;
+  }
+
+  .description {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  ul li {
+    padding: 0 0 20px;
+    position: relative;
+    margin: 0;
+  }
+
+  .vl {
+    display: flex;
+    position: absolute;
+    border-left: 1px solid #ECECEC;
+    height: 100%;
+    margin-left: 59px;
+    z-index: 0;
+  }
+ 
